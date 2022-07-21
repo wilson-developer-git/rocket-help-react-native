@@ -1,5 +1,6 @@
-import {VStack, Heading} from 'native-base';
+import {VStack, Heading, Icon} from 'native-base';
 import Logo from '../assets/logo_primary.svg';
+import { Input } from '../components/Input';
 
 export function SignIn(){
     return (
@@ -8,6 +9,11 @@ export function SignIn(){
             <Heading color="gray.100" fontSize="xl" mt={20} mb={6}>
                 Acesse sua conta
             </Heading>
+            <Input placeholder="E-mail"
+             mb={4}
+             InputLeftElement={<Icon as={}/>}
+             />
+            <Input placeholder="Senha"/>
         </VStack>
     )
 }
